@@ -35,8 +35,8 @@ useTableLayout({
             <template #opt="{ params }">
                 <TableFilter param-key="myFilter" label="自定义过滤器">
                     <el-radio-group v-model="params.myFilter">
-                        <el-radio label="1" size="large">Option 1</el-radio>
-                        <el-radio label="2" size="large">Option 2</el-radio>
+                        <el-radio value="1" size="large">Option 1</el-radio>
+                        <el-radio value="2" size="large">Option 2</el-radio>
                     </el-radio-group>
                 </TableFilter>
                 <TableFilterInput param-key="name" label="名称" />

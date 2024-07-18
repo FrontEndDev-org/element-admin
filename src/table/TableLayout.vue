@@ -20,7 +20,7 @@ const props = withDefaults(
         footer: true,
         border: false,
         stripe: true,
-    }
+    },
 );
 
 const tableStore = useTableLayout(props.layoutKey);
@@ -68,9 +68,11 @@ tableStore.allColumns.value = (slots.default?.() || [])
 // 列展示
 const showColumnData = computed(() => {
     // 保底返回 []  el-table只存在default插槽
-    return slots.default?.().filter((item) => {
-        return !tableStore.hideColumns.value?.includes(item.props?.prop);
-    }) || [];
+    return (
+        slots.default?.().filter((item) => {
+            return !tableStore.hideColumns.value?.includes(item.props?.prop);
+        }) || []
+    );
 });
 </script>
 
@@ -127,7 +129,7 @@ const showColumnData = computed(() => {
             v-model:current-page="currentPage"
             v-model:page-size="pageSize"
             :page-sizes="[10, 20, 50, 100]"
-            small
+            size="small"
             background
             layout="total, sizes, prev, pager, next, jumper"
             :total="total"
