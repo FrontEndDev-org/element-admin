@@ -1,0 +1,4 @@
+# auto-import
+.eslintrc-auto-import.json
+auto-imports.d.ts
+docc/auto-imports.d.ts

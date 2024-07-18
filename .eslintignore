@@ -1,0 +1,13 @@
+node_modules
+dist
+
+!.eslintrc.js
+!.prettierrc.js
+!.commitlintrc.js
+!.lintstagedrc.js
+!.versionrc.js
+
+# auto-import
+.eslintrc-auto-import.json
+auto-imports.d.ts
+docc/auto-imports.d.ts

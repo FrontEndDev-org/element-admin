@@ -1,0 +1,17 @@
+.vitepress-demo-preview__ant-design__container > * {
+    font-size: unset;
+}
+
+.vitepress-demo-preview__ant-design__container div[class*='language-'] {
+    border-radius: 0 0 8px 8px;
+
+    --component-preview-bg: var(--vp-code-block-bg);
+}
+
+.vitepress-demo-preview__ant-design__container {
+    border-radius: 8px;
+}
+
+:root {
+    --vp-sidebar-width: 320px;
+}
