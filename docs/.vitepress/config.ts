@@ -9,6 +9,7 @@ import { defineConfig } from 'vitepress';
 
 export default defineConfig({
     vite: {
+        base: '/element-admin/',
         plugins: [
             vueJsx(),
             AutoImport({
