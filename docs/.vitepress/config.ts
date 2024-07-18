@@ -8,8 +8,8 @@ import vueJsx from '@vitejs/plugin-vue-jsx';
 import { defineConfig } from 'vitepress';
 
 export default defineConfig({
+    base: '/element-admin/',
     vite: {
-        base: '/element-admin/',
         plugins: [
             vueJsx(),
             AutoImport({
