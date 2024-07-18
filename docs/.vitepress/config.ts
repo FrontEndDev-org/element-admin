@@ -22,6 +22,7 @@ export default defineConfig({
         },
     },
     themeConfig: {
+        siteTitle: 'Element Admin',
         search: {
             provider: 'local',
         },
